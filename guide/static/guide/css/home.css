@@ -1,0 +1,27 @@
+.start_map img {
+  width:50%;
+  height:50%;
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  background-size:cover;
+  align-self: center;
+  padding-top: 20px;
+}
+.container{
+  grid-gap:20px;
+}
+.container .search .spad{
+  padding-top: 5%;
+}
+.card {
+  float:left;
+  width:33.333%;
+  padding:.75rem;
+  margin-bottom:2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}

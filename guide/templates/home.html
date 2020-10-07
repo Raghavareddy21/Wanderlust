@@ -2,9 +2,190 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Wanderlust</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    {%load static%}
+    <link rel="stylesheet" href={% static "guide/css/home.css" %}>
   </head>
+  <title>Wanderlust</title>
   <body>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Wanderlust</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a class="nav-item nav-link" href="#">Home</a></li>
+      <li><a class="nav-item nav-link" href="#">Most Visited Places</a></li>
+      <li><a class="nav-item nav-link" href="#">Map</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="col-xs-6">
+    <h3>Get the best route:</h3>
+  <form class="route" action="" method="post">
+  <div class="form-group">
+    <label class="col-form-label">From:</label>
+      <input type="text" class="form-control" id="from" placeholder="">
+  </div>
+  <div class="form-group">
+    <label class="col-form-label">To:</label>
+      <input type="text" class="form-control" id="to" placeholder="">
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">GO</button>
+    </div>
+  </div>
+  </form>
+  </div>
+  <div class="col-xs-6 search">
+    <h3>Search for a place:</h3>
+    <form class="search" action="" method="post">
+    <div class="form-group spad">
+      <label class="col-form-label">Search:</label>
+        <input type="text" class="form-control" id="search" placeholder="">
+    </div>
+    <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+  </div>
+    </form>
+  </div>
+</div>
+<div class="start_map">
+  <center>
+  <img src="https://images.news18.com/ibnlive/uploads/2014/06/vizag-swine-flu-claims-second-life-this-year_010414042302.jpg?impolicy=website&width=696&height=552" alt="map pointing your location">
+  </center>
+</div>
+<div class="container">
+  <h3>Famous Places near you</h3>
+  <div class="row" style="display: flex; overflow-x: scroll">
+   <div class="card">
+     <img src="http://placehold.it/200x150">
+     beiging
+   </div>
+   <div class="card">
+     <img src="http://placehold.it/200x150">
+     vizag
+   </div>
+    <div class="card">
+     <img src="http://placehold.it/200x150">
+   </div>
+    <div class="card">
+     <img src="http://placehold.it/200x150">
+   </div>
+   <div class="card">
+    <img src="http://placehold.it/200x150">
+  </div>
+  <div class="card">
+   <img src="http://placehold.it/200x150">
+ </div>
+ <div class="card">
+  <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
 
+ </div>
+</div>
+<div class="container">
+  <h3>Guide for famous places</h3>
+  <div class="row" style="display: flex; overflow-x: scroll">
+   <div class="card">
+     <img src="http://placehold.it/200x150">
+     beiging
+   </div>
+   <div class="card">
+     <img src="http://placehold.it/200x150">
+     vizag
+   </div>
+    <div class="card">
+     <img src="http://placehold.it/200x150">
+   </div>
+    <div class="card">
+     <img src="http://placehold.it/200x150">
+   </div>
+   <div class="card">
+    <img src="http://placehold.it/200x150">
+  </div>
+  <div class="card">
+   <img src="http://placehold.it/200x150">
+ </div>
+ <div class="card">
+  <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+
+ </div>
+</div>
+<div class="container">
+  <h3>Wanderlust best plans:</h3>
+  <div class="row" style="display: flex; overflow-x: scroll">
+   <div class="card">
+     <img src="http://placehold.it/200x150">
+     beiging
+   </div>
+   <div class="card">
+     <img src="http://placehold.it/200x150">
+     vizag
+   </div>
+    <div class="card">
+     <img src="http://placehold.it/200x150">
+   </div>
+    <div class="card">
+     <img src="http://placehold.it/200x150">
+   </div>
+   <div class="card">
+    <img src="http://placehold.it/200x150">
+  </div>
+  <div class="card">
+   <img src="http://placehold.it/200x150">
+ </div>
+ <div class="card">
+  <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+<div class="card">
+ <img src="http://placehold.it/200x150">
+</div>
+
+ </div>
+</div>
+<div class="footer">
+  <p>Footer</p>
+</div>
   </body>
+
 </html>
