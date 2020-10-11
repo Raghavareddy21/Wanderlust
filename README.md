@@ -1,2 +1,2 @@
 # Wanderlust
-A travel guide
+A Travel guide for people who love to travel.
