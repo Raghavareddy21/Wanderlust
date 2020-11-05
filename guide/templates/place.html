@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Place</title>
-  </head>
-  <body>
-
-  </body>
+<html>
+<head>
+	<title>About the Place</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  {%load static%}
+  <link rel="stylesheet" href={% static "guide/css/place.css" %}>
+  {%load static%}
+	<script src={% static "guide/js/place.js" %}></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Wanderlust</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li ><a class="nav-item nav-link" href="/home">Home</a></li>
+    <li class="active"><a class="nav-item nav-link" href="/place">Most Visited Places</a></li>
+    <li><a class="nav-item nav-link" href="#">Map</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  </ul>
+</div>
+</nav>
+	<div>
+    {%load static%}
+		<img src={% static "guide/pics/map.jpg" %} width = "100%" height="400%">
+	</div>
+ 	<div>
+ 		<h2>About this Place</h2>
+ 		<p>
+ 			Panduranga Swamy Temple Is A Famous Temple In Chilakalapudi, Machilipatnam, Krishna District In The State Of Andhra Pradesh. This Temple Was Constructed In 1929 By Sri Bhakta Narasimham. It Has A Spiritual Significance Among The People Of Machilipatnam. The Deity And The Garbhagriha Of The Temple Are Very Similar To Pandaripur Temple. An Idol Of Sri Abhayanjaneya Swami (An Incarnation Of Lord Hanuman) Is Installed In Front Of The Lord. Every Year During The Kartika Month There Will Be A Festival Celebrated At This Temple.
+ 		</p>
+ 		<h2>Listen about this Place</h2>
+	  <button class="tablink" onclick="openCity(this, 'Telugu','orange')" id='defaultOpen'>Telugu</button>
+	  <button class="tablink" onclick="openCity(this, 'Hindi','lightblue')">Hindi</button>
+	  <button class="tablink" onclick="openCity(this, 'English','green')">English</button>
+	  <div id="Telugu" class="tabcontent">
+	  	<audio controls>
+	  		<source src="https://youtu.be/1GJh7lYX72o" type="audio/mpeg">
+	  	</audio>
+	  	<div id="mybutton">
+	  	<button type="submit" class="btn btn-default">more info</button>
+	  	</div>
+	  </div>
+	  <div id="Hindi" class="tabcontent">
+	  	<audio controls>
+	  		<source src="https://youtu.be/1GJh7lYX72o" type="audio/mpeg">
+	  	</audio>
+	  	<div id="mybutton">
+	  	<button type="submit" class="btn btn-default">more info</button>
+	  	</div>
+	  </div>
+	  <div id="English" class="tabcontent">
+	  	<audio controls>
+	  		<source src="https://youtu.be/1GJh7lYX72o" type="audio/mpeg">
+	  	</audio>
+	  	<div id="mybutton">
+	  	<button type="submit" class="btn btn-default">more info</button>
+	  	</div>
+	  </div>
+    <br>
+    <br>
+    <br>
+	<div class="container">
+  <h2>Famous Places near you</h2>
+  <div class="row" style="display: flex; overflow-x: scroll">
+	   <div class="card">
+	     <img src="http://placehold.it/200x150">
+	     Koneru Center
+	   </div>
+	   <div class="card">
+	     <img src="http://placehold.it/200x150">
+	     Manginipudi Beach
+	   </div>
+	    <div class="card">
+	     <img src="http://placehold.it/200x150">
+	   </div>
+	    <div class="card">
+	     <img src="http://placehold.it/200x150">
+	   </div>
+	   <div class="card">
+	    <img src="http://placehold.it/200x150">
+	  </div>
+	  <div class="card">
+	   <img src="http://placehold.it/200x150">
+	 </div>
+	 <div class="card">
+	  <img src="http://placehold.it/200x150">
+	</div>
+	<div class="card">
+	 <img src="http://placehold.it/200x150">
+	</div>
+	<div class="card">
+	 <img src="http://placehold.it/200x150">
+	</div>
+	<div class="card">
+	 <img src="http://placehold.it/200x150">
+	</div>
+</div>
+</body>
 </html>
