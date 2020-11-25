@@ -9,6 +9,8 @@ class Profile(models.Model):
     city=models.CharField(max_length=25)
     class Meta:
         verbose_name_plural = "Profiles"
+    def __unicode__(self):
+    	return self.user
 class Audio(models.Model):
     userId=models.ForeignKey(User,on_delete=models.CASCADE)
     language=models.CharField(max_length=20)

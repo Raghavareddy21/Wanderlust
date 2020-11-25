@@ -9,6 +9,12 @@ def home(request):
 	return render(request,'home.html')
 def place(request):
     return render(request,'place.html')
+def profileView(request):
+	if request.user.is_authenticated:
+		profile=models.Profile.objects.get(user=request.user)
+		return render(request, 'profile.html',{'profile':profile})
+	else:
+		return HttpResponse("Please login to view your profile")
 def login(request):
     if request.user.is_authenticated:
         return HttpResponse("you are already logged in")
